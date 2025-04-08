@@ -8,6 +8,8 @@ You are probably already familiar with the concept of a dataflow, even if you ha
 across the particular term "dataflow" before. The Boolean logic circuit shown below, for example, is a dataflow, because there is data (e.g. boolean values) flowing along wires between
 logical processes (e.g. NOT, OR and AND gates):
 
+![Boolean Logic Circuit](circuit.png "Boolean Logic Circuit")
+
 In general, a dataflow is a collection of any computational processes (not just logic gates),
 with inputs and outputs, that can be "wired" together. Just like the circuit diagram above, a
 dataflow is a directed graph, with nodes corresponding to the processes and edges representing
