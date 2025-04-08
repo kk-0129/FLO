@@ -4,6 +4,12 @@
 
 Flo is a graphical environment for building and executing hierarchical distributed dataflows.
 
+Flo is an application written in Swift. It's application statck comprises the following packages:
+* [FloBox](https://github.com/kk-0129/FloBox)
+* [FloGraph](https://github.com/kk-0129/FloGraph)
+* [Flo2D](https://github.com/kk-0129/Flo2D)
+* [FloApp](https://github.com/kk-0129/FloApp)
+
 You are probably already familiar with the concept of a dataflow, even if you haven't come
 across the particular term "dataflow" before. The Boolean logic circuit shown below, for example, is a dataflow, because there is data (e.g. boolean values) flowing along wires between
 logical processes (e.g. NOT, OR and AND gates):
@@ -21,9 +27,3 @@ Since a dataflow is itself a process, a node can recursively encapsulate another
 (part of the dataflow mechanism per se), or remote (running on some external networked device), so dataflows can be distributed. In particular, nodes can represent embedded IoT devices, with arcs connecting to arbitrary networked computational processes, including other IoT devices.
 
 Flo is both an application for graphically creating and editing hierarchical distributed dataflows, and a runtime dataflow execution environment. Indeed, it is a live-coding environment in which dataflows run continuously even while being modified.
-
-Flo is an application written in Swift. It's application statck comprises the following packages:
-* [FloBox](https://github.com/kk-0129/FloBox)
-* [FloGraph](https://github.com/kk-0129/FloGraph)
-* [Flo2D](https://github.com/kk-0129/Flo2D)
-* [FloApp](https://github.com/kk-0129/FloApp)
