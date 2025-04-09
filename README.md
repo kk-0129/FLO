@@ -18,5 +18,5 @@ Flo is both an application for graphically creating and editing these hierarchic
 
 This video introduces FLO and describes some of its capabilities:
 <video width="640" height="480" controls>
-  <source src="flo_demo.mp4" type="video/mp4">
+  <source src="FLO.mp4" type="video/mp4">
 </video>
