@@ -15,3 +15,6 @@ Since a dataflow is itself a process, each node can itself be a dataflow, giving
 The processes may be local or remote (running on some external networked device), so dataflows can also be **distributed**. 
 
 Flo is both an application for graphically creating and editing these hierarchical distributed dataflows, and a runtime live-coding execution environment for dataflows.
+
+Here is a short (and unfortunately low-res) video to show you what FLO looks like and some of the things it can do ...
+<video src='FLO.mov' width=640/>
