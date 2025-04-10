@@ -115,7 +115,7 @@ IMU. A running process on the robot accepts control inputs for wheel velocity, a
 multiple processes simultaneously. The server (and its published processes) can be written in any
 programming language, but must conform to a Flo-specific network protocol (defined in [FloBox](https://github.com/kk-0129/FloBox)).
 
-<img title="A Proxy Box" alt="A Proxy Box" src="/images/proxy_box.png" width=80%>
+<img title="A Proxy Box" alt="A Proxy Box" src="/images/proxy_box.png" width=65%>
 
 * Strictly speaking, the term 'device' here refers to the software server - which has a distinct network address - and not the hardware on which it runs, which could in principle run several servers. A remote process published by a server is represented in the dataflow by a proxy box, which is similar in appearance to a graph box, but with the addition of labels giving the remote device's name (e.g. 'My Robot') and network address (10.99.1.116:9929). The name of the box (e.g. 'Body' in the example above) identifies the process.
 
@@ -150,12 +150,12 @@ A meter widget, shown below, provides a visual representation of a numeric (Floa
 has one input and one output, both of type Float. The value displayed by the meter is always the
 same as its output. By default, when the meter has incoming arcs, its output tracks the last input received. Otherwise, the output varies either automatically (as described shortly), or by dragging the mouse vertically over the meter's dial.
 
-<img title="Meter Widget" alt="Meter Widget" src="/images/meter_widget.png" width=20%>
+<img title="Meter Widget" alt="Meter Widget" src="/images/meter_widget.png" width=17%>
 
 In addition to its input & output, the meter also has 4 customisable parameters, named `rate`,
 `max`, `step` and `min` (accessed by double clicking the widget):
 
-<img title="Meter Widget Parameters" alt="Meter Widget Parameters" src="/images/meter_widget_params.png" width=20%>
+<img title="Meter Widget Parameters" alt="Meter Widget Parameters" src="/images/meter_widget_params.png" width=15%>
 
 * The values of these parameters determine the meter's behaviours:
   * `min` and `max`, are the lower and upper bounds on the meter's value (the default range is -1.0 to +1.0).
@@ -173,11 +173,11 @@ A switch widget, shown below, provides a visual representation of a Boolean valu
 input and one output, both of type Bool. The value displayed by the switch is always the same as
 its output. By default, when the switch has incoming arcs, its output is the same as the last input received. Otherwise, the output toggles either automatically (below), or by clicking on the switch.
 
-<img title="Switch Widget" alt="Switch Widget" src="/images/switch_widget.png" width=20%>
+<img title="Switch Widget" alt="Switch Widget" src="/images/switch_widget.png" width=17%>
 
 The switch has a single customisable rate parameter, non-zero values of which will automatically toggle the switch every *abs(rate)* seconds.
 
-<img title="Switch Widget Parameters" alt="Switch Widget Parameters" src="/images/switch_widget_params.png" width=20%>
+<img title="Switch Widget Parameters" alt="Switch Widget Parameters" src="/images/switch_widget_params.png" width=15%>
 
 
 #### Text
@@ -185,7 +185,7 @@ A text widget, shown below, is an editable text label with an input and output, 
 String. The widget's output always follows its displayed text value. By default, when the widget
 has an incoming arc, its displayed value is constrained to the last input received. Otherwise, the widget's label is editable.
 
-<img title="Text Widget" alt="Text Widget" src="/images/text_widget.png" width=20%>
+<img title="Text Widget" alt="Text Widget" src="/images/text_widget.png" width=17%>
 
 
 
