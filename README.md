@@ -84,7 +84,7 @@ User defined processes in Flo are either:
 
 A graph box (encapsulating a local nested dataflow), is represented graphically by a coloured rectangle which has a name and various named inputs and outputs. The example in the figure below has the name "A Nested Dataflow", with 2 inputs (named "Input1" and "Input2"), and 2 outputs (named "Output1" and "Output2"), collectively called "ports". 
 
-<table>
+<table border=none>
   <tr>
     <td align="center">
       <img title="A Graph Box" alt="Example of a Graph Box" src="/images/graph_box_outside.png" width=50%>
