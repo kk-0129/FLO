@@ -143,7 +143,7 @@ A clock widget, shown below, displays a date and (analog) time. It has one input
 An expression widget is a small text field, into which the user can type arbitrary computational
 expressions, which the widget interprets as functional procedures. Any variables in the expression become the widget's inputs, over which the expression is evaluated to calculate the output. The expression language is unique to Flo (and is defined in [FloGraph](https://github.com/kk-0129/FloGraph)). A few illustrative examples are shown in the figure below:
 
-<img title="Expression Widget" alt="Expression Widget" src="/images/expression_widget.png" width=80%>
+<img title="Expression Widget" alt="Expression Widget" src="/images/expression_widget.png" width=65%>
 
 #### Meter
 A meter widget, shown below, provides a visual representation of a numeric (Float) value. It
@@ -173,7 +173,7 @@ A switch widget, shown below, provides a visual representation of a Boolean valu
 input and one output, both of type Bool. The value displayed by the switch is always the same as
 its output. By default, when the switch has incoming arcs, its output is the same as the last input received. Otherwise, the output toggles either automatically (below), or by clicking on the switch.
 
-<img title="Switch Widget" alt="Switch Widget" src="/images/switch_widget.png" width=17%>
+<img title="Switch Widget" alt="Switch Widget" src="/images/switch_widget.png" width=20%>
 
 The switch has a single customisable rate parameter, non-zero values of which will automatically toggle the switch every *abs(rate)* seconds.
 
