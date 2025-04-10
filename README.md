@@ -132,18 +132,18 @@ any arbitrary process, Flo also provides 6 built-in "widgets" - named: *annotati
 #### Annotation
 An annotation widget is just a resizable label. It has no inputs or outputs, and serves just to annotate and provide some visual structure or semantics to a dataflow. In the figure below, the annotation helps indicate the purpose of a switch.
 
-<img title="Annotation Widget" alt="Annotation Widget" src="/images/annotation_widget.png" width=70%>
+<img title="Annotation Widget" alt="Annotation Widget" src="/images/annotation_widget.png" width=50%>
 
 #### Clock
 A clock widget, shown below, displays a date and (analog) time. It has one input and one output, both of type `Date`. When the clock has an incoming arc its output is a copy of its input. Otherwise it outputs the current system time. The widget always displays its own output.
 
-<img title="Clock Widget" alt="Clock Widget" src="/images/clock_widget.png" width=15%>
+<img title="Clock Widget" alt="Clock Widget" src="/images/clock_widget.png" width=12%>
 
 #### Expression
 An expression widget is a small text field, into which the user can type arbitrary computational
 expressions, which the widget interprets as functional procedures. Any variables in the expression become the widget's inputs, over which the expression is evaluated to calculate the output. The expression language is unique to Flo (and is defined in [FloGraph](https://github.com/kk-0129/FloGraph)). A few illustrative examples are shown in the figure below:
 
-<img title="Expression Widget" alt="Expression Widget" src="/images/expression_widget.png" width=40%>
+<img title="Expression Widget" alt="Expression Widget" src="/images/expression_widget.png" width=80%>
 
 #### Meter
 A meter widget, shown below, provides a visual representation of a numeric (Float) value. It
