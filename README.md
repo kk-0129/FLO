@@ -3,7 +3,7 @@
 # FLO - Project Overview
 
 Flo is a graphical environment for building and executing hierarchical distributed dataflows.
-It is written in Swift for [macOS](https://en.wikipedia.org/wiki/MacOS), and comprises the following packages:
+It is written in [Swift](https://www.swift.org) for [macOS](https://en.wikipedia.org/wiki/MacOS), and comprises the following packages:
 * [FloBox](https://github.com/kk-0129/FloBox)
 * [FloGraph](https://github.com/kk-0129/FloGraph)
 * [Flo2D](https://github.com/kk-0129/Flo2D)
