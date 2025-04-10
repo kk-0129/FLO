@@ -13,7 +13,7 @@ It is written in [Swift](https://www.swift.org) for [macOS](https://en.wikipedia
 Flo is both an application for graphically creating and editing these hierarchical distributed dataflows, and a runtime live-coding execution environment for dataflows.
 
 * Details of how to build and execute Flo are provided in the [FloApp](https://github.com/kk-0129/FloApp) package.
-* Details of how to build and run Flo Device servers (described [below](#proxy-box-remote-process))) are provided in the [FloDev](https://github.com/kk-0129/FloDev) repository.
+* Details of how to build and run Flo Device servers (described [below](#proxy-box-remote-process)) are provided in the [FloDev](https://github.com/kk-0129/FloDev) repository.
 
 ## What is a Dataflow?
 
