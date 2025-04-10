@@ -13,6 +13,7 @@ It is written in [Swift](https://www.swift.org) for [macOS](https://en.wikipedia
 Flo is both an application for graphically creating and editing these hierarchical distributed dataflows, and a runtime live-coding execution environment for dataflows.
 
 * Details of how to build and execute Flo are provided in the [FloApp](https://github.com/kk-0129/FloApp) package.
+* Details of how to build and run Flo Device servers (described [below](#proxy-box-remote-process))) are provided in the [FloDev](https://github.com/kk-0129/FloDev) repository.
 
 ## What is a Dataflow?
 
@@ -112,9 +113,8 @@ document form to be re-opened when needed and/or transferred between computers.
 
 #### Proxy Box (Remote Process)
 A proxy box represents a remote process instantiated on a networked device. In the figure below, for example, the device is a small mobile robot with left/right wheel motors and an onboard
-IMU. A running process on the robot accepts control inputs for wheel velocity, and outputs the robot's orientation (in Euler angles) and acceleration (as XYZ vectors) as captured by the IMU. This process is made available to the network by a small publish-subscribe server, which can host
-multiple processes simultaneously. The server (and its published processes) can be written in any
-programming language, but must conform to a Flo-specific network protocol (defined in [FloBox](https://github.com/kk-0129/FloBox)).
+IMU. A running process on the robot accepts control inputs for wheel velocity, and outputs the robot's orientation (in Euler angles) and acceleration (as XYZ vectors) as captured by the IMU. This process is made available to the network by a small publish-subscribe server (see the [FloDev](https://github.com/kk-0129/FloDev) repository for technical details), which can host
+multiple processes simultaneously.
 
 <img title="A Proxy Box" alt="A Proxy Box" src="/images/proxy_box.png" width=65%>
 
