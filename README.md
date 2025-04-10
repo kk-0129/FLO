@@ -84,13 +84,7 @@ User defined processes in Flo are either:
 
 A graph box (encapsulating a local nested dataflow), is represented graphically by a coloured rectangle which has a name and various named inputs and outputs. The example in the figure below has the name "A Nested Dataflow", with 2 inputs (named "Input1" and "Input2"), and 2 outputs (named "Output1" and "Output2"), collectively called "ports". 
 
-<table style="border: none;"  cellspacing="0" cellpadding="0">
-  <tr>
-    <td align="center">
-      <img title="A Graph Box" alt="Example of a Graph Box" src="/images/graph_box_outside.png" width=50%>
-    </td>
-  </tr>
-</table>
+<img title="A Graph Box" alt="Example of a Graph Box" src="/images/graph_box_outside.png" width=40%>
 
 * The inputs are always placed on the left of the box, and the outputs are always on the right. 
 * The small black dots shown next to the ports are the graphical 'hooks' to which arcs connect.
@@ -100,7 +94,7 @@ A graph box (encapsulating a local nested dataflow), is represented graphically 
 The figure above shows the graph box from the outside - i.e. as an opaque process - with only its
 name and ports, but no indication at all of what is inside. Opening the box (with a double-click) displays the nested dataflow that it encapsulates, which might look like this: 
 
-<img title="Inside a Graph Box" alt="Inside a Graph Box" src="/images/graph_box_inside.png">
+<img title="Inside a Graph Box" alt="Inside a Graph Box" src="/images/graph_box_inside.png" width=90%>
 
 * Note that each of the box's external inputs and outputs are still visible, but are now themselves displayed as named boxes, with dots that can be connected to other boxes in the nested graph.
 * The user can edit the names of the ports, change their colour and move them around, as they wish.
@@ -121,7 +115,7 @@ IMU. A running process on the robot accepts control inputs for wheel velocity, a
 multiple processes simultaneously. The server (and its published processes) can be written in any
 programming language, but must conform to a Flo-specific network protocol (defined in [FloBox](https://github.com/kk-0129/FloBox)).
 
-<img title="A Proxy Box" alt="A Proxy Box" src="/images/proxy_box.png">
+<img title="A Proxy Box" alt="A Proxy Box" src="/images/proxy_box.png" width=80%>
 
 * Strictly speaking, the term 'device' here refers to the software server - which has a distinct network address - and not the hardware on which it runs, which could in principle run several servers. A remote process published by a server is represented in the dataflow by a proxy box, which is similar in appearance to a graph box, but with the addition of labels giving the remote device's name (e.g. 'My Robot') and network address (10.99.1.116:9929). The name of the box (e.g. 'Body' in the example above) identifies the process.
 
@@ -138,30 +132,30 @@ any arbitrary process, Flo also provides 6 built-in "widgets" - named: *annotati
 #### Annotation
 An annotation widget is just a resizable label. It has no inputs or outputs, and serves just to annotate and provide some visual structure or semantics to a dataflow. In the figure below, the annotation helps indicate the purpose of a switch.
 
-<img title="Annotation Widget" alt="Annotation Widget" src="/images/annotation_widget.png">
+<img title="Annotation Widget" alt="Annotation Widget" src="/images/annotation_widget.png" width=70%>
 
 #### Clock
 A clock widget, shown below, displays a date and (analog) time. It has one input and one output, both of type `Date`. When the clock has an incoming arc its output is a copy of its input. Otherwise it outputs the current system time. The widget always displays its own output.
 
-<img title="Clock Widget" alt="Clock Widget" src="/images/clock_widget.png">
+<img title="Clock Widget" alt="Clock Widget" src="/images/clock_widget.png" width=15%>
 
 #### Expression
 An expression widget is a small text field, into which the user can type arbitrary computational
 expressions, which the widget interprets as functional procedures. Any variables in the expression become the widget's inputs, over which the expression is evaluated to calculate the output. The expression language is unique to Flo (and is defined in [FloGraph](https://github.com/kk-0129/FloGraph)). A few illustrative examples are shown in the figure below:
 
-<img title="Expression Widget" alt="Expression Widget" src="/images/expression_widget.png">
+<img title="Expression Widget" alt="Expression Widget" src="/images/expression_widget.png" width=40%>
 
 #### Meter
 A meter widget, shown below, provides a visual representation of a numeric (Float) value. It
 has one input and one output, both of type Float. The value displayed by the meter is always the
 same as its output. By default, when the meter has incoming arcs, its output tracks the last input received. Otherwise, the output varies either automatically (as described shortly), or by dragging the mouse vertically over the meter's dial.
 
-<img title="Meter Widget" alt="Meter Widget" src="/images/meter_widget.png">
+<img title="Meter Widget" alt="Meter Widget" src="/images/meter_widget.png" width=20%>
 
 In addition to its input & output, the meter also has 4 customisable parameters, named `rate`,
 `max`, `step` and `min` (accessed by double clicking the widget):
 
-<img title="Meter Widget Parameters" alt="Meter Widget Parameters" src="/images/meter_widget_params.png">
+<img title="Meter Widget Parameters" alt="Meter Widget Parameters" src="/images/meter_widget_params.png" width=20%>
 
 * The values of these parameters determine the meter's behaviours:
   * `min` and `max`, are the lower and upper bounds on the meter's value (the default range is -1.0 to +1.0).
@@ -179,11 +173,11 @@ A switch widget, shown below, provides a visual representation of a Boolean valu
 input and one output, both of type Bool. The value displayed by the switch is always the same as
 its output. By default, when the switch has incoming arcs, its output is the same as the last input received. Otherwise, the output toggles either automatically (below), or by clicking on the switch.
 
-<img title="Switch Widget" alt="Switch Widget" src="/images/switch_widget.png">
+<img title="Switch Widget" alt="Switch Widget" src="/images/switch_widget.png" width=20%>
 
 The switch has a single customisable rate parameter, non-zero values of which will automatically toggle the switch every *abs(rate)* seconds.
 
-<img title="Switch Widget Parameters" alt="Switch Widget Parameters" src="/images/switch_widget_params.png">
+<img title="Switch Widget Parameters" alt="Switch Widget Parameters" src="/images/switch_widget_params.png" width=20%>
 
 
 #### Text
@@ -191,7 +185,7 @@ A text widget, shown below, is an editable text label with an input and output, 
 String. The widget's output always follows its displayed text value. By default, when the widget
 has an incoming arc, its displayed value is constrained to the last input received. Otherwise, the widget's label is editable.
 
-<img title="Text Widget" alt="Text Widget" src="/images/text_widget.png">
+<img title="Text Widget" alt="Text Widget" src="/images/text_widget.png" width=20%>
 
 
 
