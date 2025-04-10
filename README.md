@@ -4,14 +4,15 @@
 
 Flo is a graphical environment for building and executing hierarchical distributed dataflows.
 It is written in [Swift](https://www.swift.org) for [macOS](https://en.wikipedia.org/wiki/MacOS), and comprises the following packages:
-* [FloBox](https://github.com/kk-0129/FloBox)
-* [FloGraph](https://github.com/kk-0129/FloGraph)
-* [Flo2D](https://github.com/kk-0129/Flo2D)
-* [FloApp](https://github.com/kk-0129/FloApp)
+* [FloBox](https://github.com/kk-0129/FloBox), common core classes and utilities  
+* [FloHW](https://github.com/kk-0129/FloHW), a small library of hardware drivers
+* [FloGraph](https://github.com/kk-0129/FloGraph), defines a dataflow
+* [Flo2D](https://github.com/kk-0129/Flo2D), 2D dataflow visualisation and editor
+* [FloApp](https://github.com/kk-0129/FloApp), macos document-based application
 
 Flo is both an application for graphically creating and editing these hierarchical distributed dataflows, and a runtime live-coding execution environment for dataflows.
 
-* Installation details are provided [here](TODO)
+* Details of how to build and execute Flo are provided in the [FloApp](https://github.com/kk-0129/FloApp) package.
 
 ## What is a Dataflow?
 
