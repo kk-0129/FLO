@@ -9,7 +9,7 @@ It is written in [Swift](https://www.swift.org) for [macOS](https://en.wikipedia
 * [FloGraph](https://github.com/kk-0129/FloGraph), defines a dataflow
 * [Flo2D](https://github.com/kk-0129/Flo2D), 2D dataflow visualisation and editor
 * [FloApp](https://github.com/kk-0129/FloApp), macOS document-based application
-* [FloApp](https://github.com/kk-0129/FloDev), alternative language versions of the FLO device server
+* [FloDev](https://github.com/kk-0129/FloDev), alternative language versions of the FLO device server
 
 Flo is both an application for graphically creating and editing these hierarchical distributed dataflows, and a runtime live-coding execution environment for dataflows.
 
